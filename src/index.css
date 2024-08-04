@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*sidenav*/
+#menuicon{
+    cursor: pointer;
+  }
+  #sidenav{
+    background-color: gray;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100vh;
+    z-index:3;
+  }
+  #closenav{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #closenav:hover{
+    transition: 2s;
+    color: black;
+  
+  }
+  #sidenav_list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+    padding-top: 100px;
+    font-size: 15px;
+    text-decoration: none;
+  
+  }
+  #sidenav a{
+    text-decoration: none;
+    color: white;
+    transition: 2s;
+  }
+  #sidenav a:hover{
+    color: black;
+    transition: 2s;
+  }
